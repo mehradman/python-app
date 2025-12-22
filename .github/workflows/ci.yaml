@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: mehradman/python-app:${{env.COMMIT_ID}}
+          tags: mehradman/python-app:${{ENV.COMMIT_ID}}
