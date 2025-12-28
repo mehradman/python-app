@@ -33,7 +33,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: python-app.test.com
+    - host: python-app.testbed.mag
       paths:
         - path: /
           pathType: Prefix
@@ -46,11 +46,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /api/v1/healthz
     port: http
 readinessProbe:
   httpGet:
-    path: /
+    path: /api/v1/healthz
     port: http
 
 autoscaling:
