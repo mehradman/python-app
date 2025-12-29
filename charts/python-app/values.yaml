@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: mehradman/python-app
   pullPolicy: IfNotPresent
-  tag: f5a8b9b7ba095db9830c873ca67121e57e88dcdd
+  tag: e0066b5af938aa65813023a17123fbc0d6746f78
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
