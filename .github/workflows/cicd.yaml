@@ -39,7 +39,8 @@ jobs:
         name: Modify values file
         shell: bash
         run: |
-          pip install yq
+          sudo apt update
+          sudo apt install yq -y
           yq -Yi '.image.tag = "${{github.sha}}"' charts/python-app/values.yaml
       - 
         name: Commit changes
